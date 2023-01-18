@@ -1,0 +1,37 @@
+﻿@model CinemaInfo.WebUI.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <section class="login-info">
+        <div class="container">
+            <div class="row main">
+                <div class="col">
+                    <div class="form-header">
+                        <h1 class="text-center ">Giriş Formu</h1>
+                    </div>
+                    <div class="main-content">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="input-group ">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Eposta adresinizi giriniz." })
+                        </div>
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                            @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Şifreniz", type = "password" })
+                        </div>
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block login-button">Giriş</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}

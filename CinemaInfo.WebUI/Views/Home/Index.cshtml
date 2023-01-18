@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+<div class="container">
+    <div class="card mt-5 p-4">
+        <label>Film İsmi Giriniz : </label>
+        <div id="loader" class="text-center" hidden><h1>Loading...</h1></div>
+
+        <div class="input-group mb-3">
+            <input id="txtSearchVal" type="text" name="query" class="form-control">
+            <button id="btnSearch" onclick="searchClick()" class="btn btn-primary"><i class="fas fa-search"></i>Ara</button>
+        </div>
+            @using (Html.BeginForm("Logout", "Home", FormMethod.Post))
+            {
+                <button id="btnLogout" type="submit" class="btn btn-danger">Çıkış</button>
+            }
+            <div id="moviesList"></div>
+
+        </div>
+    </div>
+
+<script>
+
+    $('#txtSearchVal').keypress(function (e) {
+        var key = e.which;
+        if (key == 13)
+            searchClick();
+    });
+
+    function searchClick() {
+        var value = $("#txtSearchVal").val();
+        var baseUrl = "//www.omdbapi.com/?apikey=f5011fd8&s=" + value
+
+        $.ajax({
+            url: baseUrl,
+            type: "GET",
+            dataType: "json",
+            beforeSend: function () {
+                $('#loader').removeAttr('hidden');
+            },
+            success: function (data) {
+                sendMovieData(data.Search);
+            },
+            complete: function () {
+                $('#loader').attr('hidden', true);
+            }
+            });
+    }
+
+
+    function sendMovieData(movieData) {
+        $.ajax({
+            url: "@Url.Action("GetMoviesList", "Home")",
+            type: "POST",
+            dataType: "html",
+            data: { movieData: movieData },
+            success: function (data) {
+                $("#moviesList").html(data);
+            }
+        });
+    }
+</script>

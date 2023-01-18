@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaInfo.WebUI", "CinemaInfo.WebUI\CinemaInfo.WebUI.csproj", "{16F2A6EE-1C0C-47CE-8C17-4CF0FB5CBCBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaInfo.API", "CinemaInfo.API\CinemaInfo.API.csproj", "{2D08A687-B297-4EBF-87A6-DF831EEFB965}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16F2A6EE-1C0C-47CE-8C17-4CF0FB5CBCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F2A6EE-1C0C-47CE-8C17-4CF0FB5CBCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F2A6EE-1C0C-47CE-8C17-4CF0FB5CBCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F2A6EE-1C0C-47CE-8C17-4CF0FB5CBCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B517744C-5C15-435C-ABE1-4FFF39B5726F}
+	EndGlobalSection
+EndGlobal
