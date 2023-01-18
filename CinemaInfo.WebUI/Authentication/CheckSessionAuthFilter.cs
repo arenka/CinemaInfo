@@ -24,7 +24,7 @@ namespace CinemaInfo.WebUI.Authentication
             {
                 filterContext.Result = new RedirectToRouteResult(
                     new RouteValueDictionary {
-                    { "controller", "Home" },
+                    { "controller", "Account" },
                     { "action", "Login" } });
             }
         }

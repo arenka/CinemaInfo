@@ -15,7 +15,7 @@
             <input id="txtSearchVal" type="text" name="query" class="form-control">
             <button id="btnSearch" onclick="searchClick()" class="btn btn-primary"><i class="fas fa-search"></i>Ara</button>
         </div>
-            @using (Html.BeginForm("Logout", "Home", FormMethod.Post))
+            @using (Html.BeginForm("Logout", "Account", FormMethod.Post))
             {
                 <button id="btnLogout" type="submit" class="btn btn-danger">Çıkış</button>
             }
