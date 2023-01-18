@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaInfo.WebUI", "CinemaI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaInfo.API", "CinemaInfo.API\CinemaInfo.API.csproj", "{2D08A687-B297-4EBF-87A6-DF831EEFB965}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaInfo.Console", "CinemaInfo.Console\CinemaInfo.Console.csproj", "{62F9E7A1-6855-482E-B072-8C2EC2846090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D08A687-B297-4EBF-87A6-DF831EEFB965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F9E7A1-6855-482E-B072-8C2EC2846090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F9E7A1-6855-482E-B072-8C2EC2846090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F9E7A1-6855-482E-B072-8C2EC2846090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F9E7A1-6855-482E-B072-8C2EC2846090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
