@@ -1,5 +1,5 @@
 # CinemaInfo
- Bir mvc uygulaması üzerinden sisteme giriş yaparak ilgili API aracışığıyla istenilen filmlerin bilgisini getiren ve kullanıcı doğrulamasını farklı bir API üzerinden gerçekleştirin uygulamadır.
+ Bir mvc uygulaması üzerinden sisteme giriş yaparak ilgili API aracılığıyla istenilen filmlerin bilgisini getiren ve kullanıcı doğrulamasını farklı bir API üzerinden gerçekleştiren uygulamadır.
 
 
  Test Kullanıcıları ; 
