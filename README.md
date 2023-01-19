@@ -10,7 +10,7 @@
 
   static void Main(string[] args)
         {
-            //Verilen bir matris üzerinde diyagonal işlem yapmak için;
+            
 
             List<List<int>> records = new List<List<int>>() {
             new List<int> { 1, 4,7},
