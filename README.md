@@ -1,4 +1,12 @@
 # CinemaInfo
+ Bir mvc uygulaması üzerinden sisteme giriş yaparak ilgili API aracışığıyla istenilen filmlerin bilgisini getiren ve kullanıcı doğrulamasını farklı bir API üzerinden gerçekleştirin uygulamadır.
+
+
+ Test Kullanıcıları ; 
+ "demir@yahoo.com","12345"
+ "demir@saglik.com","12345"
+ "demir@sigorta.com","12345"
+
 
   static void Main(string[] args)
         {
